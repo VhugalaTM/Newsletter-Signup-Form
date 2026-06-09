@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/signup.css" />
+  <link rel="stylesheet" href="styles/confirm.css" />
+  <title>Newsletter sign-up form with success message</title>
+
+</head>
+<body>
+
+  <!-- Sign-up form start -->
+  <div class="main-wrapper">
+    <div class="sub-wrapper-1">
+      <div class="image">
+        <img src="assets/images/illustration-sign-up-mobile.svg" class="mobile-image"/>
+        <img src="assets/images/illustration-sign-up-desktop.svg" class="desktop-image"/>
+      </div>
+  
+      <div class="text-content">
+        <h3>Stay updated!</h3>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <table>
+          <tr>
+            <td><img src="assets/images/icon-list.svg"/></td>
+            <td>Product discovery and building what matters</td>
+          </tr>
+          <tr>
+            <td><img src="assets/images/icon-list.svg"/></td>
+            <td> Measuring to ensure updates are a success</td>
+          </tr>
+          <tr>
+            <td><img src="assets/images/icon-list.svg"/></td>
+            <td>And much more!</td>
+          </tr>
+        </table>
+      </div>
+  
+      <div class="form">
+        <div class="head-form">
+          <div class="email-head">Email address</div>
+          <div class="error"></div>
+        </div>
+        <div class="input">
+          <input type="text" placeholder="email@company.com" />
+        </div>
+        <div class="button">
+          <button>Subscribe to monthly newsletter</button>
+        </div>
+      </div>
+    </div>
+    <!-- Sign-up form end -->
+    <!-- Success message start -->
+
+    <div class="sub-wrapper-2">
+      <div class="top-block"></div>
+      <div class="icon-success">
+        <img src="assets/images/icon-success.svg">
+      </div>
+      <div class="head-message">
+        <h3>Thanks for subscribing!</h3>
+        <div class="success-message">
+        </div>
+      </div>
+
+
+      <div class="dismiss-btn">
+        <button>Dismiss message</button>
+      </div>
+    </div>
+  </div>
+  <!-- Success message end -->
+
+  <script src="script.js"></script>
+</body>
+</html>

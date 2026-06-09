@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url(../assets/fonts/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(../assets/fonts/Roboto-Regular.ttf);
+}
+
+.sub-wrapper-1{
+    display: none;
+}
+.sub-wrapper-2 {
+    display: none;
+}
+
+/*          SMALL SCREEN            */
+@media screen and (max-width: 374px) {
+    .sub-wrapper-2{
+        grid-template-rows: 1fr 1fr 4fr 1fr;
+        grid-template-areas: 
+        'top-block'
+        'icon-success'
+        'head-message'
+        'dismiss-btn';
+        height: 100dvh;
+        width: 100%;
+    }
+    
+    .icon-success{
+        padding: 13px;
+    }
+    .icon-success img{
+        width: 18%;
+    }
+    .head-message{
+        padding: 13px;
+    }
+    .head-message h3{
+        font-family: 'Roboto-Bold';
+        font-size: xx-large;
+    }
+    .head-message .success-message{
+        margin-top: 14px;
+        font-family: 'Roboto-Regular';
+        font-size: medium;
+    }
+    .dismiss-btn{
+        padding: 13px;
+    }
+    .dismiss-btn button{
+        padding: 15px;
+        text-align: center;
+        color: white;
+        background-color: #232742;
+        font-family: 'Roboto-Bold';
+        width: 100%;
+        border-radius: 10px;
+        border: none;
+    }
+    button:hover{
+        background: linear-gradient(to right, #ff5476, #ff5d5b, #fd6649, #fe693e);
+    }
+}
+
+/*      MEDIUM SCREEN         */
+@media screen and (min-width: 375px) and (max-width: 1024px) {
+    .sub-wrapper-2{
+        grid-template-rows: 1fr 1fr 4fr 1fr;
+        grid-template-areas: 
+        'top-block'
+        'icon-success'
+        'head-message'
+        'dismiss-btn';
+        height: 100dvh;
+        width: 100%;
+    }
+    
+    .icon-success{
+        padding: 13px;
+    }
+    .icon-success img{
+        width: 18%;
+    }
+    .head-message{
+        padding: 13px;
+    }
+    .head-message h3{
+        font-family: 'Roboto-Bold';
+        font-size: xx-large;
+    }
+    .head-message .success-message{
+        margin-top: 14px;
+        font-family: 'Roboto-Regular';
+        font-size: medium;
+    }
+    .dismiss-btn{
+        padding: 13px;
+    }
+    .dismiss-btn button{
+        padding: 15px;
+        text-align: center;
+        color: white;
+        background-color: #232742;
+        font-family: 'Roboto-Bold';
+        width: 100%;
+        border-radius: 10px;
+        border: none;
+    }
+    button:hover{
+        background: linear-gradient(to right, #ff5476, #ff5d5b, #fd6649, #fe693e);
+    }
+}
+
+/*          LARGE SCREEN         */
+@media screen and (min-width: 1024px) {
+    .main-wrapper{
+        background-color: #232742;
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+    }
+    
+    .sub-wrapper-2{
+        grid-template-rows: auto auto auto auto;
+        gap: 20px;
+        width: 380px;
+        height: 380px;
+        background-color: white;
+        border-radius: 20px;
+        padding: 40px;
+    }
+    
+    .icon-success{
+        padding: 0;
+    }
+    .icon-success img{
+        width: 50px;
+    }
+    .head-message h3{
+        font-family: 'Roboto-Bold';
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+    .head-message .success-message{
+        font-family: 'Roboto-Regular';
+        font-size: 16px;
+    }
+    .dismiss-btn{
+        padding: 0;
+        margin-top: 10px;
+    }
+    .dismiss-btn button{
+        padding: 15px;
+        text-align: center;
+        color: white;
+        background-color: #232742;
+        font-family: 'Roboto-Bold';
+        width: 100%;
+        border-radius: 10px;
+        border: none;
+    }
+    button:hover{
+        background: linear-gradient(to right, #ff5476, #ff5d5b, #fd6649, #fe693e);
+    }
+}
